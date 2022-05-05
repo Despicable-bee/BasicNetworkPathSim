@@ -23,16 +23,20 @@ Hence there are 3 main ways to increase productivity on paper:
 2. Reduce the cost to produce the thing (outsource).
 3. Decrease the time to produce the thing (automate parts of the process).
 
-Option 1 isn't always possible, as prices for goods and services are, more or 
+`Option 1` isn't always possible, as prices for goods and services are, more or 
     less, at the mercy of the market.
 
-Option 2 is possible, but can be complicated to pull off in some circumstances,
+`Option 2` is possible, but can be complicated to pull off in some circumstances,
     and introduces challenges of its own (e.g. security concerns, and ip-theft).
+    However, as many Victoria 2 players will recount, **throughput** is 
+    generally more important than **efficiency**.
 
-Option 3 is also possible, and in places like software, is in high demand.
+`Option 3` is also possible, and in places like software, is in high demand.
     It also creates new opporunities, as automation typically coincides with the
     creation of tools (software) to make a job easier. Said tools can possibly 
     be marketed and sold as products themselves.
+
+It also happens to be the only aspect of the equation I can leverage :^)
 
 Hence, this repo aims to show how a tedious university level hand calculation 
     can be automated using a basic python script, and how we can create some 
@@ -59,6 +63,30 @@ I should also mention that all the switches in the global network are
 The point of the assignment was to help us get familiar with network 
     bottlenecks (in preparation for the later sections on 
     **routing algorithms**, and **congestion control**).
+
+## How do I modify the implementation to my needs?
+
+If you look through the `main.py` file, specifically at the `GlobalNetwork` 
+    objects' `__init__` method, you'll see the following:
+
+<img src="https://storage.googleapis.com/starfighter-public-bucket/wiki_images/resume_photos/NetworkPathSim/00008.PNG"
+    width="600px">
+
+This is essentially a programmatic implementation of pair of tables show above.
+
+The path computer will merely try to deliver packets from a starting point to a
+    destination (specified as the first and last index of the path list)
+
+<img src="https://storage.googleapis.com/starfighter-public-bucket/wiki_images/resume_photos/NetworkPathSim/00009.PNG"
+    width="600px">
+
+Hence you can modify the behaviour by first defining your own `nodes` and 
+    `links`, and then specify a `path` for them.
+
+If the path computer can't find a link that takes a packet directly to the next
+    node, then an exception will be raised.
+
+## Example usage
 
 Hence, you'll probably notice that the `L2` link (described as a satellite
     connection), is very slow (`100kbps`) and is very long (`42,000km`).
