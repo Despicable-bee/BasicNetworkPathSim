@@ -1,46 +1,7 @@
 # Basic Network Path Sim
 
-<img src="https://storage.googleapis.com/starfighter-public-bucket/wiki_images/resume_photos/NetworkPathSim/catter.jpg"
+<img src="https://storage.googleapis.com/starfighter-public-bucket/wiki_images/resume_photos/NetworkPathSim/pic1.jpg"
     width="500px">
-
-Trust me, this will make more sense as you read on :3
-
-## What's the point of showing this?
-
-Another thing an employer might ask is how proficient you are with using
-    software to automate "things".
-
-The point of this question is to ensure that you're generating maximum 
-    productivity.
-
-"Productivity" as an index is computed roughly using the following formula:
-
-`Productivity` = ((`Value of thing being done/made`) - (`cost to produce thing`)) / (`Time to produce thing`) 
-
-Hence there are 3 main ways to increase productivity on paper:
-
-1. Increase the value of the thing being done/made (increase prices).
-2. Reduce the cost to produce the thing (outsource).
-3. Decrease the time to produce the thing (automate parts of the process).
-
-`Option 1` isn't always possible, as prices for goods and services are, more or 
-    less, at the mercy of the market.
-
-`Option 2` is possible, but can be complicated to pull off in some circumstances,
-    and introduces challenges of its own (e.g. security concerns, and ip-theft).
-    However, as many Victoria 2 players will recount, **throughput** is 
-    generally more important than **efficiency**.
-
-`Option 3` is also possible, and in places like software, is in high demand.
-    It also creates new opporunities, as automation typically coincides with the
-    creation of tools (software) to make a job easier. Said tools can possibly 
-    be marketed and sold as products themselves.
-
-It also happens to be the only aspect of the equation I can leverage :^)
-
-Hence, this repo aims to show how a tedious university level hand calculation 
-    can be automated using a basic python script, and how we can create some 
-    basic tools to help visualise what the results mean.
 
 ## The assignment
 
@@ -221,14 +182,3 @@ Zooming in on these, we uncover the following:
 
 What we're seeing here is the entire `S4` node block, which just goes to show 
     how much of a bottleneck that satellite connection truely is!
-
-## Concluding statement
-Most things in life are very complex to wrap your head around, but so long as 
-    you rememeber these words from a philosopher that I can't remember the name
-    of, you should be fine.
-
-> Any sufficiently complex task can be made simple with the right tooling and
->   knowledge.
-
-And to an extent, it holds true, imagine trying to do what we just did without
-    the computer and the internet!
